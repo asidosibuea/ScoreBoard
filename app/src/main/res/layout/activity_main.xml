@@ -1,0 +1,104 @@
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        style="@style/AppTheme.MarginAtas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/AppTheme.MarginDalamKanan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/AppTheme.TextTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team A" />
+
+            <TextView
+                android:id="@+id/pointA"
+                style="@style/AppTheme.TextPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/button1a"
+                style="@style/AppTheme.Tombol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="tambahSatuA"
+                android:text="+1 Point" />
+
+            <Button
+                android:id="@+id/button2a"
+                style="@style/AppTheme.Tombol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="tambahDuaA"
+                android:text="+2 Points" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/hitam" />
+
+        <LinearLayout
+            style="@style/AppTheme.MarginDalamKiri"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AppTheme.TextTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team B" />
+
+            <TextView
+                android:id="@+id/pointB"
+                style="@style/AppTheme.TextPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/button1b"
+                style="@style/AppTheme.Tombol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="tambahSatuB"
+                android:text="+1 Point" />
+
+            <Button
+                android:id="@+id/button2b"
+                style="@style/AppTheme.Tombol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="tambahDuaB"
+                android:text="+2 Points" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:layout_gravity="center"
+        style="@style/AppTheme.Tombol"
+        android:id="@+id/buttonReset"
+        android:onClick="reset"
+        />
+</LinearLayout>
